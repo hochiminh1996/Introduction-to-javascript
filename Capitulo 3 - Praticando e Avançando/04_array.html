@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <title>Array</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Felippe">
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*
+               Array : uma estrutura de dados simples (coleção de variáveis), que reserva um espaço continuo na memória para armazenar uma série de valores, onde referenciamos através de seu index.
+            */
+            const animal = [
+                "Lion", "Cat", "Monkey"
+            ]
+            console.log(animal[0]);//acessando a primeira propriedade
+
+            //PERCORRENDO TODO O ARRAY
+            animal.forEach(function(animal,i){
+                console.log(animal,i)
+            })
+
+        </script>
+    </body>
+</html>

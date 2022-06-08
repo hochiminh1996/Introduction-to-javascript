@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <title>Escopo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Felippe">
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*
+                Escopo : define a visibilidade da variável conforme o escopo
+
+                Let e const
+
+                Let/const : escopo local. Se for chamado depois do bloco, haverá um problema de localização da variável. Usar apenas dentro do escopo onde a variável foi criada
+            
+                *Importante : Se a variável for criada usando let, fora do escopo, conseguimos acessa-lá normalmente. Só n podemos acessa-lá se a mesma for criada dentro do escopo e chamada fora.
+            */
+            {
+                //console.log(nome);//irá informar que a variável n foi inicializada ainda
+                let nome = "Felippe";
+            }
+            //console.log(nome); // irá produzir um erro de referência. Afinal, a vriável n foi localizada.
+
+
+            let nome = "Felippe";
+            {
+                console.log(nome); // Irá funcionar
+            }
+
+        </script>
+    </body>
+</html>

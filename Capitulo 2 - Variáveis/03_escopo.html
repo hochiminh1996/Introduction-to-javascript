@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <title>Escopo</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Felippe">
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*
+                Escopo : área de visualização de uma variável. 
+                    VAR : define um escopo global e local de uma variável, funciona fora de blocos
+
+                    LET : 
+            */
+
+            {
+                var x = 0;// var funciona fora do escopo
+            }
+           
+            console.log(x);//0
+
+            console.log(y);
+            // RETORNA UNDEFINIED : POIS ESTAMOS CHAMANDO UM VAR Q AINDA N FOI DEFINIDA PREVIAMENTE (HOISTING)
+            {
+                var y=0;
+            }
+            console.log(y)// agora é 0
+            /*
+                INTERPRETAÇÃO DO JS PARA VAR
+
+                var y;
+
+                console.log(y) indefinido
+
+                {
+                    y = 0; // atribuição de valor
+                }
+            */
+        </script>
+    </body>
+</html>

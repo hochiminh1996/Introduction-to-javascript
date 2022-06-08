@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <title>Tipo : Objeto</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Felippe">
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*
+                Tipo : Objeto.
+                Conhecido por ser um tipo de dado estrutural, ou seja, cria uma estrutura padrão. Possuindo métodos e atributos.
+
+            */
+            const pessoa = {
+                name : "Felippe", 
+                age : 25, 
+                height : 1.78,
+                weight : 70,
+                course : "Análise e Desenvolvimento de Sistemas",
+                college : "Instituto Federal de São Paulo",
+                view(){
+                    console.log(`${this.name} tem ${this.age} anos e estuda ${this.course} no ${this.college}`)
+                }
+                /*
+                    Nosso objetivo possui uma série de propriedades e um método exclusivo para visualizar os campos
+                */
+            }
+            pessoa.view();// acessando o método de nosso objeto.
+
+        </script>
+    </body>
+</html>
