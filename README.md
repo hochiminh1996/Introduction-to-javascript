@@ -6,5 +6,7 @@ Este repositório tem como principal objetivo documentar e recapitular os concei
 ![programacao](https://github.com/hochiminh1996/Introduction-to-javascript/blob/master/dev_gif.gif)
 
 ```
+
 console.log("Olá, mundo");
+
 ```
